@@ -1,0 +1,20 @@
+{
+  "name": "iso11801",
+  "version": "1.0.0",
+  "description": "Site - ISO11801 presentation for college",
+  "main": "index.js",
+  "scripts": {
+    "pug": "pug src/output.pug -P -w",
+    "styles": "npx tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "Vivers <vivers.savva@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

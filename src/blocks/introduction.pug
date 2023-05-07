@@ -1,0 +1,11 @@
+block content
+    include ../layouts/container.pug
+    +coloredContainer("gamma-lightGray")
+        - var title = "Введение"
+        - var description = "ISO 11801 - это всеобъемлющий мировой стандарт для кабельных систем центров обработки данных и инфраструктуры зданий. Стандарт гарантирует организациям создание эффективных и действенных кабельных систем, которые соответствуют требованиям и поддерживают высокий уровень производительности."
+        .w-full.flex.justify-center
+            div(class="w-3/6 w-full")
+                .text-6xl.bg-gradient-to-r.from-cyan-400.to-pink-400.inline-block.text-transparent.bg-clip-text= title
+                .font-sans.text-xl.leading-8.mt-10.text-slate-300= description
+            div(class="w-3/6 w-full flex justify-end")
+                .img-gamma(style="background-image: url(https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=2400/theme_images/electric/electric-02_df408e6d.svg);")

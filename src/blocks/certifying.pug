@@ -1,0 +1,8 @@
+block content
+    include ../layouts/container.pug
+    +svgContainer("https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=2400/theme_images/electric/electric-06_ae46f1e5.svg")
+        - var title = "Тестирование и сертификация по ISO 11801"
+        - var description = "Сертификация по стандарту ISO 11801 имеет решающее значение для обеспечения надлежащей функциональности сетевых установок. Процедуры и параметры тестирования и сертификации определены стандартом, чтобы гарантировать, что кабельная система соответствует требованиям и обеспечивает уровень производительности, указанный для каждого из параметров передачи."
+        .bg-gamma-lightGray.rounded.px-16.py-16
+            .text-4xl.bg-gradient-to-r.from-cyan-400.to-pink-400.inline-block.text-transparent.bg-clip-text= title
+            .font-sans.text-lg.leading-8.mt-10.text-slate-300= description

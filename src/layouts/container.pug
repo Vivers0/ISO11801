@@ -1,0 +1,11 @@
+mixin coloredContainer(bgColor)
+    section(class=`bg-${bgColor} py-20`)
+        .container.mx-auto.max-w-5xl
+            if block
+                block
+
+mixin svgContainer(bgSvg)
+    section(class=`py-20 svg-bg-gamma`, style=`background-image: url("${bgSvg}")`)
+        .container.mx-auto.max-w-5xl
+            if block
+                block

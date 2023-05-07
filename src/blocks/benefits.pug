@@ -1,0 +1,8 @@
+block content
+    include ../layouts/container.pug
+    +coloredContainer("gamma-darkGray")
+        - var title = "Преимущества соответствия стандарту ISO 11801"
+        - var description = "Соответствие стандарту ISO 11801 дает множество преимуществ, включая более высокую производительность системы, повышенную надежность, улучшенную гибкость, повышенную безопасность и снижение затрат с течением времени. Следуя рекомендациям этого стандарта, организации могут создавать высококачественные и надежные системы связи, которые удовлетворяют потребности и рост их бизнеса."
+        .bg-gamma-lightGray.rounded.px-16.py-16
+            .text-4xl.bg-gradient-to-r.from-cyan-400.to-pink-400.inline-block.text-transparent.bg-clip-text= title
+            .font-sans.text-lg.leading-8.mt-10.text-slate-300= description

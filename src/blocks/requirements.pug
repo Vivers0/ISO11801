@@ -1,0 +1,11 @@
+block content
+    include ../layouts/container.pug
+    +coloredContainer("gamma-lightGray")
+        - var title = "Ключевые требования"
+        - var description = "Основные требования стандарта ISO 11801 включают характеристики передачи данных, характеристики кабелей и соединений, распределение путей и пространства, заземление и соединение, а также администрирование кабельной системы. Стандарт также охватывает такие важные параметры, как стандарты прокладки кабелей, рекомендации по установке, методики тестирования и документация."
+        .w-full.flex.justify-center
+            div(class="w-3/6 w-full")
+                .text-6xl.bg-gradient-to-r.from-cyan-400.to-pink-400.inline-block.text-transparent.bg-clip-text= title
+                .font-sans.text-xl.leading-8.mt-10.text-slate-300= description
+            div(class="w-3/6 w-full flex justify-end")
+                .img-gamma(style="background-image: url('https://cdn.gamma.app/cdn-cgi/image/quality=80,fit=scale-down,onerror=redirect,width=2400/theme_images/electric/electric-12_317a0e02.svg');")
